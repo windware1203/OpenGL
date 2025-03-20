@@ -1,0 +1,37 @@
+Model File Format
+
+Type:SIMPLE
+Triangle:n
+Vertex:m
+
+triangle_id(0) v1_id  v2_id  v3_id
+    |
+triangle_id(n-1) v1_id  v2_id  v3_id
+
+v_id(0) x  y  z  nx  ny nz
+    |
+v_id(m-1) x  y  z  nx  ny nz
+
+or
+
+Type:COLOR
+Triangle:n
+Vertex:m
+
+triangle_id(0) v1_id  v2_id  v3_id fr  fg  fb  br  bg  bb
+    |
+triangle_id(n-1) v1_id  v2_id  v3_id fr  fg  fb  br  bg  bb
+
+vertex_id(0) x  y  z  nx  ny nz
+    |
+vertex_id(m-1) x  y  z  nx  ny nz
+
+
+x,y,z are (x,y,z) of a point, nx,ny,nz are Normal vector of a point.
+ 
+Triangle with color Information
+It is almost the same of the first format. But there is one more line of colors: fr,fg,fb, br,bg,bb.
+(fr,fg,fb) are the front side color (Red,Green,Blue) of triangle. (br,bg,bb) are the back side color (Red,Green,Blue) of triangle. 
+ 
+
+¡@
